@@ -6,19 +6,36 @@
   <style type="text/css" media="screen">
     body {
       font-family: 'Open Sans', sans-serif;
-      background: #69D2E7
+      background: #69D2E7;
+      text-align: center;
+      color: #FDF3E7;
+    }
+    .question {
+      margin-top: 150px;
+      font-size: 35px;
     }
     .answer {
       font-size: 40px;
-      color: #FDF3E7;
-      text-align: center;
-      margin-top: 280px;
+      margin-top: 80px;
     }
   </style>
 </head>
 <body id="balcony" onload="">
-  <div class="answer">
-    No
+  <div class="question">
+    Can I use the balcony yet?
   </div>
+  <div id="answer" class="answer">
+    <img src="images/ajax-loader.gif" />
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      nos = ["Nope", "No", "Not Yet"]
+      setTimeout(function() {
+        console.log('a');
+        document.getElementById('answer').innerHTML = nos[Math.floor(Math.random()*nos.length)];
+      }, 4000);
+    });
+  </script>
 </body>
 </html>
