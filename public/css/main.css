@@ -1,0 +1,14 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #69D2E7;
+  text-align: center;
+  color: #FDF3E7;
+}
+.question {
+  margin-top: 150px;
+  font-size: 35px;
+}
+.answer {
+  font-size: 40px;
+  margin-top: 80px;
+}

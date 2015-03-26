@@ -3,39 +3,16 @@
   <meta charset="utf-8">
   <title>Can I go on the Balcony yet?</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <style type="text/css" media="screen">
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: #69D2E7;
-      text-align: center;
-      color: #FDF3E7;
-    }
-    .question {
-      margin-top: 150px;
-      font-size: 35px;
-    }
-    .answer {
-      font-size: 40px;
-      margin-top: 80px;
-    }
-  </style>
+  <link href='css/main.css' rel='stylesheet' type'text/css'>
 </head>
-<body id="balcony" onload="">
+<body>
   <div class="question">
     Can I use the balcony yet?
   </div>
   <div id="answer" class="answer">
     <img src="images/ajax-loader.gif" />
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      nos = ["Nope", "No", "Not Yet"]
-      setTimeout(function() {
-        console.log('a');
-        document.getElementById('answer').innerHTML = nos[Math.floor(Math.random()*nos.length)];
-      }, 4000);
-    });
-  </script>
+  <script src="js/main.js" text="text/javascript"></script>
 </body>
 </html>
+
